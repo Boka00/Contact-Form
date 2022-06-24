@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="contactF.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+  <div id="dot"></div>
+    <div class="container">
+        <div class="title">Contact form</div>
+        <br>
+        <div class="text1">Please fill in your information and we'll be sending your order in no time</div>
+        <br>
+        <form action="#" name="search">
+          
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Last Name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Your Email *</span>
+                <input type="text" placeholder="e.g. hello@contact.net " required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone *</span>
+                <input type="text" placeholder="### ### ###" name="key" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">Message Subject *</span>
+                <select class="option" name="Other">
+                    <option>Other</option>
+                    <option>Help with form</option>
+                    <option>##########</option>
+                    <option>!@#@!$!!$!@</option>
+            </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Massage *</span>
+                <textarea id="subject" name="subject" placeholder="max 150 characters" style="height: 100px; width: 620px;"></textarea>
+              </div>
+              <div class="input-box">
+                <span class="details">Verification *</span>
+                    <div class="g-recaptcha" data-sitekey="6Lc-ZqoeAAAAAEi8bw1XKEfjodR0bdwT1bg623If"></div> 
+              </div>
+          </div>
+          <hr>
+          <div class="button">
+            <input type="submit" id="blueRect" name="send" value="SUBMIT FORM">
+          </div>
+        </form>
+        
+    </div>
+    <script src="contactJS.js"></script>
+</body>
+</html>

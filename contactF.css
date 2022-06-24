@@ -1,0 +1,143 @@
+@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lucida console, sans-serif, Arial GEO;
+}
+body{   
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-image: url(back4.jfif);
+    background-size: cover;
+}
+.container{
+    position: fixed;
+    max-width: 700px;
+    width: 100%;
+    background: transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .text1{
+    font-size: 13px;
+    font-weight: 300;
+    position: relative;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+   .container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 250px;
+    background: linear-gradient(145deg, #9b59b6, #71b7e6);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 1 - 20px);
+}
+   .user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box .option{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #71b7e6;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box select:focus,
+.user-details .input-box select:valid{
+ border-color: #71b7e6
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #71b7e6;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease;
+}
+textarea{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #71b7e6;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box textarea:focus,
+.user-details .input-box textarea:valid{
+ border-color: #71b7e6
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+ border-color: #9b59b6
+}
+
+form input[type="radio"]{
+    display: none;
+  }
+  form .button{
+    height: 45px;
+    margin: 30px 0;
+}
+form .button input{
+ 
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: normal;
+    border: 3.3px solid #ffffff;
+}
+#blueRect{
+    width: 50%;
+    height: 50px;
+    background-color:#71b7e6;
+}
+
+#dot {
+    position: relative;
+    text-align: left;
+    height: 25px;
+    width: 25px;
+    background-color:#71b7e6;
+    border-radius: 50%;
+    display: inline-block;
+}
